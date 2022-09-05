@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center; 
+    text-decoration: none;
+}
+
+/* Heading */
+
+.main-heading {
+    margin: 10px;
+}
+
+/* Nav */
+
+.menu {
+    background-color: aqua;
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Links */
+
+.link {
+    cursor: progress;
+    margin-left: 5px;
+    padding: 10px;
+    border: black dashed 1px;
+    outline: black dashed 1px;
+    transition: 0.5s;
+}
+
+
+.link:hover {
+    border: white dashed 1px;
+    outline: white dashed 1px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-weight: 600;
+}
+
+.link:nth-child(1) {
+    color: rgb(255, 0, 0);
+}
+
+.link:nth-child(2) {
+    color: orangered;
+}
+
+.link:nth-child(3) {
+    color: yellow;
+}
+
+.link:nth-child(4) {
+    color: green;
+}
+
+.link:nth-child(5) {
+    color: purple;
+}
+
+/* Footer */
+
+.copyright {
+    margin-top: 10px;
+    font-style: normal;
+}
+
