@@ -75,7 +75,6 @@ main {
 aside {
     width: 40%;
     height: 100%;
-    padding: 0 10px;
 }
 
 footer {
@@ -88,12 +87,12 @@ footer {
 .second-block,
 .third-block {
     padding: 10px;
-    display: flex;
     border: 1px solid black;
 }
 
 .first-block {
-    width: 60%;
+    justify-content: flex-start;
+    width: 59%;
     height: 100%;
 }
 
@@ -121,6 +120,11 @@ footer {
 
     main {
         flex-wrap: nowrap;
+    }
+
+    aside{
+        width: 100%;
+        padding: 0;
     }
 
     .first-block,
