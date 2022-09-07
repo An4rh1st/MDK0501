@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    margin: 10px;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(rgb(190, 38, 38), rgb(245, 119, 47));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    font-size: 25px;
+}
+
+header img {
+    width: 100px;
+}
+
+.link {
+    padding: 15px;
+    margin: 10px 25px;
+    border-radius: 10px;
+    background-color: rgb(243, 242, 234);
+    transition: 0.5s;
+}
+
+.link:hover {
+    background-color: rgb(255, 136, 0);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: linear-gradient(rgb(245, 119, 47), rgb(255, 226, 96));
+    width: 100%;
+    padding: 10px;
+}
+
+aside {
+    width: 40%;
+    height: 100%;
+    padding: 0 10px;
+}
+
+footer {
+    border-top: 1px solid #000;
+    flex: 0 0 auto;
+    background: linear-gradient(rgb(255, 226, 96), rgb(64, 103, 155))
+}
+
+.first-block,
+.second-block,
+.third-block {
+    padding: 10px;
+    display: flex;
+    border: 1px solid black;
+}
+
+.first-block {
+    width: 60%;
+    height: 100%;
+}
+
+.second-block {
+    width: 100%;
+    height: 50%;
+}
+
+.third-block {
+    width: 100%;
+    height: 50%;
+}
+
+@media (max-width: 900px) {
+
+    header,
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link {
+        padding: 15px 40px;
+    }
+
+    main {
+        flex-wrap: nowrap;
+    }
+
+    .first-block,
+    .second-block,
+    .third-block {
+        /* display: flex;
+        flex-direction: column; */
+        width: 100%;
+    }
+}
