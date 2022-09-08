@@ -1,81 +1,117 @@
+/*-----------\
+|  settings  |
+\-----------*/
+
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
 }
 
-html,
-body {
-    height: 100%;
-    display: flex;
-    flex:  auto;
+html,body{
+	height: 100%;
+	width: 100%;
 }
 
-header {
-    background: linear-gradient(rgb(190, 38, 38), rgb(245, 119, 47));
+.test {
+    border: 1px solid black;
+}
+
+.flex {
     display: flex;
     flex-wrap: wrap;
+}
+
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.around {
     justify-content: space-around;
+}
+
+.start {
+    align-items: start;
+}
+
+.center {
     align-items: center;
-    border-bottom: 1px solid #000;
 }
 
-.logo img{
-    max-width: 100px;
-    max-height: auto;
-    min-width: auto;
-    min-height: auto;
+.end {
+    align-items: end;
 }
 
-.wrapper{
-    display: flex;
+.w-100 {
     width: 100%;
-    height: 100%;
 }
+
+/*-----------\
+|   header   |
+\-----------*/
+
+header {
+    padding: 10px;
+}
+
+header img{
+    width: 100px;
+}
+
+/*-----------\
+|   wrapper  |
+\-----------*/
 
 nav {
-    display: flex;
-    flex-direction: column;
-    width: 10%;
-    height: fit-content;
-    background-color: rgb(168, 238, 255);
+    min-width: 10%;
+    height: 100%;
+    padding: 5px;
+}
+
+nav a{
+    padding: 5px;
+    color: #000;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+    padding: 5px;
 }
 
 main {
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
-    width: 70%;
+    width: 89%;
     height: 100%;
 }
 
-
 section {
-    display: flex;
-    width: 100%;
-    height: 50%;
-    background-color: rgb(172, 23, 23);
+    min-height: 79%;
 }
 
-.other{
-    display: flex;
-    flex-direction: row;
+.other {
+    min-height: 20%;
+    padding-top: 10px;
 }
 
-.one{
-    background-color: rgb(0, 102, 255);
-    width: 50%;
+article, aside{
+    width: 49%;
+    height: 100%;
 }
 
-.two{
-    background-color: khaki;
-    width: 50%;
-}
+/*-----------\
+|   footer   |
+\-----------*/
 
 footer {
     flex: 0 0 auto;
-    background-color: rgb(158, 158, 158);
+    min-height: 100px;
+    margin-top: 5px;
 }
