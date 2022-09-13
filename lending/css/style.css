@@ -1,8 +1,9 @@
 header{
 	min-height: 100vh;
+	background-color: rgb(0, 140, 255);
     background: url(../media/img/bg2.gif);
     /* background: url(../media/img/bg1.jpg); */
-    background-color: rgba(0,0,0,0.5);
+    /* background-color: rgba(0,0,0,0.5); */
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -25,6 +26,10 @@ nav a{
 	border: 2px solid #fff;
 }
 
+a{
+	padding: 5px;
+}
+
 section{
 	display: flex;
 	align-items: center;
@@ -37,27 +42,44 @@ section{
 
 section:first-child{
     background: url(../media/img/120230.gif);
+	/* background-color: chartreuse; */
 	/* background: url(../media/img/bg2.gif); */
 	background-size: cover;
 	background-position: center;
+	width: 100vw;
+	height: 100vh;
 }
 
 .s {
-    width: 100%;
+    min-width: 100vw;
+	min-height: 50vh;
+}
+
+.sS{
+	margin-top: 350px;
+	min-width: 100vw;
+	min-height: 50vh;
+}
+
+.sSS {
+	min-width: 100vw;
+	min-height: 50vh;
+	padding: 0 25px;
 }
 
 .s1 {
-    width: 20%;
+    max-width: 20vw;
+	max-height: 50%;
     padding: 46px;
     border-radius: 5px;
 }
 
-.s1:hover, a:hover {
+.s1:hover, .s2:hover, a:hover {
     border:2px solid rgb(250, 44, 44);
     box-shadow: 0px 0px 20px rgb(255, 44, 44);
 }
 
-.s1 input{
+.s1 input, .s2 input{
     width: 100%;
     padding: 10px;
     margin-top: 10px;
@@ -66,13 +88,14 @@ section:first-child{
 }
 
 section:nth-child(2){
-	/* background: url(); */
-    background-color: rgb(115, 115, 115);
+	/* background: url(../media/img/587316-cyberpunk-2077-2k-ascii-art-wallpaper.png); */
+	background: url(../media/img/Untitled-1.png);
+    /* background-color: rgb(115, 115, 115); */
 	background-size: cover;
 	background-position: center;
 }
 
-.s1 h2{
+.s1 h2, .s2 h2{
     padding: 10px;
     color: black;
     background-color: #fff;
@@ -85,10 +108,17 @@ section:nth-child(2) .s1 p{
 }
 
 section:nth-child(3){
-	/* background: url(); */
+	background: url(../media/img/587316-cyberpunk-2077-2k-ascii-art-wallpaper.png);
     background-color: rgb(135, 0, 0);
 	background-size: cover;
 	background-position: center;
+}
+
+.s2 {
+    max-width: 30vw;
+	max-height: 50%;
+    padding: 46px;
+    border-radius: 5px;
 }
 
 section:last-child{
