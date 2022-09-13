@@ -17,9 +17,9 @@
         <nav>
             <a href="#about">О xакатоне</a>
             <a href="#prize">Призовой фонд</a>
-            <a href="#tasks">Описание задачи</a>
+            <a href="#reg">Описание задачи</a>
         </nav>
-        <a href="" class="test">Начать взлом</a>
+        <a href="#start" class="test">Зарегистрироваться</a>
     </header>
     <main>
         <section id="about">
@@ -65,7 +65,27 @@
                 </div>
             </div>
         </section>
+        <section id="reg">
+            <div class="order">
+                <form action="">
+                    <input type="text" placeholder="Как Вас зовут?">
+                    <input type="email" placeholder="Введите Ваш email">
+                    <input type="text" placeholder="Введите Ваш telegram">
+                    <input type="text" placeholder="Выберите трек" list="trackList" autocomplete="on">
+                    <datalist id="trackList">
+                        <option value="WEB"></option>
+                        <option value="DATA"></option>
+                    </datalist>
+                    <input type="submit" class="button" value="Начать взлом">
+                </form>
+            </div>
+        </section>
     </main>
+    <footer>
+        <img src="media/social_icons/instagram.png" alt="Запрещенная соцсеть">
+        <img src="media/social_icons/vk.png" alt="ВК">
+        <img src="media/social_icons/youtube.png" alt="Ютуб">
+    </footer>
 </body>
 
 </html>
