@@ -1,0 +1,65 @@
+@font-face{
+	font-family: gardens;
+	src: url('../fonts/PressStart2P-Regular.ttf');
+}
+
+.no-scrollbar {
+  scrollbar-width: none; /*mozilla*/
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /*chrome*/
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    font-family: gardens;
+}
+
+body,html{
+	width: 100%;
+}
+
+.test {
+    border: 1px solid white;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.start {
+    align-items: start;
+}
+
+.center {
+    align-items: center;
+}
+
+.end {
+    align-items: end;
+}
+
+.w-100 {
+    width: 100%;
+}

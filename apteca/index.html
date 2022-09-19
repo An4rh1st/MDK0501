@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Поликлиника</title>
+	</head>
+	<body>
+
+		<header>
+			<a href="#" class="logo">
+				<img src="media/logo.png" alt="">
+				<p>ЗАЛЕЧИМ ДО КОНЦА</p>
+				<p style="font-size: 24px;">+7 (800) 555 55 55</p>
+			</a>
+			<nav>
+				<a href="#about">О поликлинике</a>
+				<a href="#doctors">Наши врачи</a>
+				<a href="#how">Как добраться</a>
+			</nav>
+			<a class="button" href="#order">Записаться на прием</a>
+			<a class="navigate" href="#about" style="margin-top: 100px;"><img src="media/next.png" alt=""></a>
+		</header>
+
+		<main>
+			<section id="about">
+				<a class="navigate" href="#"><img src="media/up.png" alt=""></a>
+				<hr>
+				<h2>О поликлинике</h2>
+				<div class="about">
+					
+				</div>
+				
+				<a class="navigate" href="#doctors"><img src="media/next.png" alt=""></a>
+
+			</section>
+
+			<section id="doctors">
+				<a class="navigate" href="#about"><img src="media/up.png" alt=""></a>
+				<hr>
+				<h2>Наши врачи</h2>
+				<div class="doctors">
+					
+				</div>
+				
+				<a class="navigate" href="#order"><img src="media/next.png" alt=""></a>
+			</section>
+
+			<section id="order">
+				<a class="navigate" href="#doctors"><img src="media/up.png" alt=""></a>
+				<hr>
+				<h2>Записаться на прием</h2>
+				<div class="order">
+					<form action="">
+						<input type="text" placeholder="Как Вас зовут?">
+						<input type="email" placeholder="Введите Ваш email">
+						<input type="text" placeholder="Введите Ваш телефон">
+						<input type="text" placeholder="Выберите специалиста" list="docList" autocomplete="off">
+						<datalist id="docList">
+							<option value="Терапевт"></option>
+							<option value="Хирург"></option>
+							<option value="Травматолог"></option>
+							<option value="Офтальмолог"></option>
+						</datalist>
+						<input type="submit" class="button" value="Записаться на прием">
+					</form>
+				</div>
+				<a class="navigate" href="#how"><img src="media/next.png" alt=""></a>
+			</section>
+
+			<section id="how">
+				<a class="navigate" href="#order"><img src="media/up.png" alt=""></a>
+				<hr>
+				<h2>Как добраться</h2>
+				<div class="how">
+					<h3>Наш адрес:</h3>
+					<p>Малопролетарская улица, 28
+						Щёлково, Московская область, Россия, 141102</p>	
+					<img src="media/map.png" alt="">
+				</div>
+				
+			</section>
+		</main>
+
+		<a class="navigate-top" href="#"><img src="media/up.png" alt=""><img src="media/up.png" alt=""><img src="media/up.png" alt=""></a>
+		<footer>
+			<img src="media/social_icons/instagram.png" alt="">
+			<img src="media/social_icons/vk.png" alt="">
+			<img src="media/social_icons/youtube.png" alt="">
+		</footer>
+	</body>
+</html>
