@@ -1,6 +1,6 @@
-/* :root{
-    --red: linear-gradient(rgb(245, 31, 31),rgb(218, 56, 56));
-} */
+:root{
+    --red: linear-gradient(rgb(245, 31, 31),rgb(153, 22, 22));
+}
 
 * {
     margin: 0;
@@ -23,10 +23,10 @@ body {
     height: 100%;
 }
 
-body {
+/* body {
     display: flex;
     flex-direction: column;
-}
+} */
 
 .test {
     border: 1px solid black;
@@ -39,6 +39,7 @@ header {
     flex-direction: column;
     width: 100%;
     height: auto;
+    background-color: rgb(221, 221, 221);
     /* flex: 0 0 auto; */
 }
 
@@ -50,7 +51,7 @@ header {
 
 .header-nav ul li{
     padding: 20px 50px;
-    background-color: red;
+    background: var(--red);
 }
 
 header img{
@@ -61,15 +62,55 @@ header img{
 
 .header-main
 {
+    padding: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: red;
+    background: var(--red);
+    justify-content: space-between;
 }
 
 h1{
     font-size: 20px;
 }
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+.news, .profile, .chat{
+    text-align: center;
+} 
+
+.menu, .profile{
+    margin-bottom: 10px;
+}
+
+aside, section{
+    margin: 5px;
+}
+
+.bg{
+    background-color: rgb(218, 218, 218);
+    margin: 0 10px;
+}
+
+h2, h3{
+    background: var(--red);
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+h3{
+    box-shadow: none;
+}
+
+/* div:not(.header-main), section{
+    margin: 5px;  
+} */
+
 
 aside {
     width: 15%;
@@ -77,13 +118,27 @@ aside {
 
 section {
     width: 70%;
+    height: fit-content;
 }
 
-main {
+/* section ul, aside ul{
+    background-color: rgb(218, 218, 218);
+    margin: 0 10px;
+} */
+
+article ul{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+textarea{
+    background-color: rgb(218, 70, 70);
 }
 
 footer {
     display: flex;
-    /* flex: 0 0 auto; */
+    justify-content: space-between;
+    height: 50px;
+    padding: 10px;
 }
