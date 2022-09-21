@@ -1,19 +1,21 @@
-:root{
-    --red: linear-gradient(rgb(245, 31, 31),rgb(153, 22, 22));
+:root {
+    --red: linear-gradient(rgb(245, 31, 31), rgb(153, 22, 22));
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-li{
+li {
     list-style: none;
 }
 
@@ -32,7 +34,7 @@ body {
     border: 1px solid black;
 }
 
-.bg{
+.bg {
     background-color: rgb(205, 205, 205);
     margin: 0 10px;
 }
@@ -45,7 +47,7 @@ header {
     width: 100%;
     height: auto;
     background-color: rgb(221, 221, 221);
-    /* flex: 0 0 auto; */
+    flex: 0 0 auto;
 }
 
 .header-nav ul {
@@ -54,19 +56,18 @@ header {
     flex-direction: row;
 }
 
-.header-nav ul li{
+.header-nav ul li {
     padding: 20px 50px;
     background: var(--red);
 }
 
-header img{
+header img {
     width: 100%;
     background-size: cover;
-	background-position: center;
+    background-position: center;
 }
 
-.header-main
-{
+.header-main {
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -75,9 +76,9 @@ header img{
     justify-content: space-between;
 }
 
-h1{
+/* h1 {
     font-size: 20px;
-}
+} */
 
 main {
     display: flex;
@@ -85,50 +86,102 @@ main {
     background-color: rgb(235, 235, 235);
 }
 
-.news, .profile, .chat{
+.news,
+.profile,
+.chat {
     text-align: center;
-} 
+}
 
-.menu, .profile{
+.menu,
+.profile {
     margin-bottom: 10px;
 }
 
 .menu nav {
+    margin-top: 5px;
     border: 10px solid rgb(180, 180, 180);
 }
-.menu ul{
-    box-shadow: 0 0 5px rgba(0,0,0,1);
+
+.menu ul {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
 }
-.menu li{
+
+.menu li {
     border: 1px solid black;
     padding: 5px;
 }
 
-.chat h2{
+.category li {
+    margin: 5px;
+}
+
+/* .news{
+    display: flex;
+    flex-direction: column;
+}
+
+.news article{
+    justify-content: space-around;
+} */
+
+.news li {
+    background: linear-gradient(rgb(237, 237, 237), rgb(223, 223, 223));
+    margin: 10px 5px;
+    padding: 3px 15px;
+    border: 1px solid rgb(160, 160, 160);
+}
+
+article li {
+    border-radius: 10px;
+}
+
+.profile{
+    padding: 0 10px;
+}
+
+.profile img {
+    margin-top: 10px;
+    width: 50%;
+}
+
+/* .profile .bg ul>li>a {
+    text-decoration: solid;
+    text-decoration-color: black;
+} */
+
+.profile a{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.chat h2 {
     margin-bottom: 5px;
 }
 
-.chat p{
+.chat p {
     border: 1px solid black;
     margin: 10px;
     padding: 10px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 5px rgba(0,0,0,1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
     text-align: left;
 }
 
-aside, section{
+aside,
+section {
     margin: 5px;
 }
 
-h2, h3{
+h2,
+h3 {
+    padding: 10px 0;
     background: var(--red);
     border-radius: 5px;
     text-align: center;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-h3{
+h3 {
     box-shadow: none;
 }
 
@@ -151,19 +204,34 @@ section {
     margin: 0 10px;
 } */
 
-article ul{
+article ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-textarea{
+textarea {
+    outline: none;
     background-color: rgb(218, 70, 70);
+    min-width: 130px;
+    min-height: 50px;
+    width: 130px;
+    height: 50px;
+    max-width: 200px;
+    max-height: 150px;
 }
 
 footer {
     display: flex;
+    flex: 0 0 auto;
     justify-content: space-between;
-    height: 50px;
+    align-items: center;
+    height: 100px;
     padding: 10px;
+}
+
+footer p{
+    background: var(--red);
+    padding: 10px;
+    border-radius: 10px;
 }
